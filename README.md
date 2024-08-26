@@ -30,6 +30,7 @@ This script generates a helix curve and returns an array of curve points.
 ```javascript
 const curvePoints = generateHelixPoints(numPoints, radius, height, rotations);
 console.log(curvePoints);
+```
 
 ### `generateToroidalSpiralPoints`
 
@@ -39,7 +40,7 @@ This script generates a toroidal spiral and returns an array of curve points.
 ```javascript
 const curvePoints = generateToroidalSpiralPoints(numPoints, torusRadius, tubeRadius, numRevolutions, offset);
 console.log(curvePoints);
-
+```
 
 ### `visualiseCurve`
 
@@ -52,6 +53,7 @@ const curves = useMemo(() => {
     const curve = new THREE.CatmullRomCurve3(points, true, 'centripetal', 0.5);
     return [curve];
 }, [curvePoints]);
+```
 
 
 Feed the curvePoints (an array of your curve points) into the visualization script, and it will display them as red spheres. Additionally, provide the curves—typically, a CatmullRomCurve3 curve generated from the points.
