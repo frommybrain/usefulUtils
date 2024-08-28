@@ -22,6 +22,17 @@ The outputted coordinates will be available in the terminal as an array of point
 
 ## JavaScript/JSX Scripts
 
+### `generateCirclePoints`
+
+This script generates a circle curve and returns an array of curve points.
+
+**Usage**:
+```javascript
+const curvePoints = generateCirclePoints(numPoints, radius);
+console.log(curvePoints);
+```
+
+
 ### `generateHelixPoints`
 
 This script generates a helix curve and returns an array of curve points.
@@ -34,11 +45,11 @@ console.log(curvePoints);
 
 ### `generateToroidalSpiralPoints`
 
-This script generates a toroidal spiral and returns an array of curve points.
+This script generates a toroidal spiral and returns an array of curve points. You can also now set the plane orientation using 'xy' or 'xz'
 
 **Usage**:
 ```javascript
-const curvePoints = generateToroidalSpiralPoints(numPoints, torusRadius, tubeRadius, numRevolutions, offset);
+const curvePoints = generateToroidalSpiralPoints(numPoints, torusRadius, tubeRadius, numRevolutions, offset, orientation);
 console.log(curvePoints);
 ```
 
