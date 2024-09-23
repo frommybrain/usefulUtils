@@ -70,4 +70,8 @@ const curves = useMemo(() => {
 Feed the curvePoints (an array of your curve points) into the visualization script, and it will display them as red spheres. Additionally, provide the curves—typically, a CatmullRomCurve3 curve generated from the points.
 
 
+### `/extendThreeJSMaterial`
+
+A quick and basic template for extending a MeshPhong Material. This setup will just duplicate the MPM, but with a frag and vertex shader ready for messing up. Good for creating custom shaders, but making use of threeJS material properties.
+
 
