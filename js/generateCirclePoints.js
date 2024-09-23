@@ -11,5 +11,5 @@ export const generateCirclePoints = (numPoints = 100, radius = 50) => {
 };
 
 // Use like this:
-const curvePoints = generateCirclePoints();
+//const curvePoints = generateCirclePoints();
 //console.log(curvePoints);
