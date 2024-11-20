@@ -1,0 +1,21 @@
+squared:
+darkenFactor = darkenFactor * darkenFactor;
+
+cubed:
+darkenFactor = darkenFactor * darkenFactor * darkenFactor;
+
+squareroot:
+darkenFactor = sqrt(darkenFactor);
+
+sine:
+darkenFactor = sin(darkenFactor * 3.14159 * 0.5);
+
+smoothstep:
+darkenFactor = smoothstep(0.0, 1.0, darkenFactor);
+
+custom curve using mix:
+float t = darkenFactor;
+darkenFactor = mix(2.0 * t * t, 1.0 - 2.0 * (1.0 - t) * (1.0 - t), step(0.5, t));
+
+exponential:
+darkenFactor = 1.0 - exp(-3.0 * darkenFactor);
